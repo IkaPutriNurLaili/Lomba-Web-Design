@@ -18,7 +18,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url('img/dermagabg.jpg');
+    background-image: url('CEMARA5.JPG');
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -27,7 +27,7 @@ header {
 }
 
 .hero.transition {
-    background-image: url('img/dermagabg.jpg');
+    background-image: url('CEMARA5.JPG');
 }
 
 .overlay {
@@ -238,7 +238,7 @@ footer {
 
 /* Content Styles */
 .content {
-    background-image: url('img/iniaja.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-image: url('DERMAGA1.JPG'); /* Ganti dengan path gambar yang sesuai */
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -256,7 +256,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('img/dermaga2.jpg'); /* Ganti dengan gambar latar belakang yang diinginkan */
+    background-image: url('DERMAGA1.JPG'); /* Ganti dengan gambar latar belakang yang diinginkan */
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -462,7 +462,7 @@ body.opening-page {
 }
 
 .tuban-section {
-    background-image: url('batik.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-image: url('DERMAGA5.JPG'); /* Ganti dengan path gambar yang sesuai */
     background-size: cover;
     background-position: center;
     padding: 100px 20px; /* Tambahkan padding untuk memberikan ruang */
