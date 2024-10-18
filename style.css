@@ -238,7 +238,7 @@ footer {
 
 /* Content Styles */
 .content {
-    background-image: url('DERMAGA1.JPG'); /* Ganti dengan path gambar yang sesuai */
+    background-color : rgba(189, 190, 190, 0.849);
     background-size: cover;
     background-position: center;
     padding: 20px;
