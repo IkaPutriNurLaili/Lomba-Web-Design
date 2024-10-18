@@ -1,0 +1,492 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan perhitungan lebar dan tinggi yang konsisten */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f2f2f2;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img/dermagabg.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero.transition {
+    background-image: url('img/dermagabg.jpg');
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    background: rgb(252, 249, 249);
+}
+
+.hero-text {
+    position: relative;
+    color: #faf5f5;
+    text-align: center;
+    top: 45%;
+    transform: translateY(-50%);
+    font-family: 'Arial', sans-serif;
+}
+
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-btn {
+    
+    margin: 10px; /* Memusatkan tombol */
+    background-color: #479dff;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ff4500;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(65, 188, 236, 0.836);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.nav-logo {
+    color: rgb(245, 239, 239);
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar ul li a:hover {
+    color: #ff6347;
+}
+
+/* Destination Section */
+.destinations {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.destination-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 50px);
+    height: 400px;
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.destination-card p {
+    padding: 0 15px 20px;
+    font-size: 1em;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: rgba(59, 193, 226, 0.856);
+    color: white;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .destination-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Content Styles */
+.content {
+    background-image: url('img/iniaja.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 80%;
+    margin: auto;
+}
+
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('img/dermaga2.jpg'); /* Ganti dengan gambar latar belakang yang diinginkan */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.carousel-container {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pantai Section */
+.pantai {
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.pantai::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.pantai .text {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Tambahan untuk teks */
+.pasir-putih-text,
+.kelapa-text {
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.destination-card2 {
+    background-color: white; /* Warna latar belakang */
+    border-radius: 15px; /* Sudut yang membulat */
+    padding: 20px; /* Ruang di dalam kartu */
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin: 20px; /* Jarak antar elemen */
+}
+
+.destination-card2 h2 {
+    font-size: 2em; /* Ukuran font untuk judul */
+    margin-bottom: 15px; /* Jarak bawah judul */
+    color: #206C6E; /* Warna teks */
+}
+
+.destination-card2 p {
+    font-size: 1.1em; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris */
+    margin-bottom: 10px; /* Jarak bawah paragraf */
+    color: #333; /* Warna teks */
+}
+
+.destination-card2 ul {
+    list-style-type: disc; /* Jenis list */
+    padding-left: 20px; /* Jarak kiri untuk list */
+}
+
+.destination-card2 ul li {
+    margin-bottom: 8px; /* Jarak bawah tiap item list */
+}
+
+/* Responsif untuk kartu */
+@media (max-width: 768px) {
+    .destination-card2 {
+        padding: 15px; /* Ruang dalam yang lebih kecil */
+    }
+
+    .destination-card2 h2 {
+        font-size: 1.5em; /* Ukuran font lebih kecil untuk perangkat kecil */
+    }
+
+    .destination-card2 p {
+        font-size: 1em; /* Ukuran font lebih kecil untuk paragraf */
+    }
+}
+
+.pantai-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.pantai-title {
+    font-size: 2.5em;
+    color: #206C6E;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 2px; /* Jarak antar huruf */
+}
+
+.pantai-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* Meratakan teks */
+    padding: 0 15px; /* Memberikan padding kiri dan kanan */
+}
+
+/* Gaya untuk halaman pembukaan */
+body.opening-page {
+    height: 100vh; /* Menggunakan seluruh tinggi viewport */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/acara3.jpg'); /* Ganti dengan gambar yang sesuai */
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.intro {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #479dff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+.tuban-section {
+    background-image: url('batik.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* Tambahkan padding untuk memberikan ruang */
+    color: white; /* Warna teks */
+    text-align: center; /* Rata tengah */
+}
+
+.tuban-section h2 {
+    font-size: 2.5em; /* Ukuran font untuk judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+.tuban-section p {
+    font-size: 1.2em; /* Ukuran font untuk paragraf */
+    line-height: 1.6; /* Jarak antar baris */
+    margin: 0; /* Hapus margin default */
+}
+
+.text-box {
+    background-color: rgb(75, 73, 73);
+    padding: 10px; /* Atur padding sesuai kebutuhan */
+    display: inline-block; /* Agar kotak hanya sebesar tulisan */
+    border-radius: 5px; /* Untuk sudut yang membulat */
+}
+
+
+
