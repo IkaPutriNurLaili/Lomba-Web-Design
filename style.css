@@ -256,7 +256,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('BACKGROUNDBATIK.JPG'); /* Ganti dengan gambar latar belakang yang diinginkan */
+    background-color: rgba(189, 190, 190, 0.849);
     background-size: cover;
     background-position: center;
     z-index: 1;
