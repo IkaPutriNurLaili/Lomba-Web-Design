@@ -256,7 +256,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('DERMAGA1.JPG'); /* Ganti dengan gambar latar belakang yang diinginkan */
+    background-image: url('BACKGROUNDBATIK.JPG'); /* Ganti dengan gambar latar belakang yang diinginkan */
     background-size: cover;
     background-position: center;
     z-index: 1;
