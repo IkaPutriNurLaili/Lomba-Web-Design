@@ -109,7 +109,7 @@ header {
 }
 
 .destinations {
-    padding: 50px;
+    padding: 100px;
     background-color: #f9f9f9;
 }
 
@@ -117,16 +117,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 100px;
 }
 
 .destination-card {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 105px;
     overflow: hidden;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
     width: calc(33.333% - 50px);
-    height: 400px;
+    height: 4000px;
     text-align: center;
 }
 
